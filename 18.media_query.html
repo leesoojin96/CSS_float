@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>media query</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+      @media (max-width:600px) {
+      body{
+        background-color: #99e7ff;
+      }
+    }
+      @media (max-width:500px) {
+        body{
+          background-color: #3858e0;
+        }
+      }
+      @media (min-width:601px) {
+        body{
+          background-color: #ffcbed;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    500px이하일때는 파란색,<br>
+    501~600일때는 하늘색,<br>
+    601이상일때는 분홍색
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>multi_column</title>
+    <style media="screen">
+      .column{
+        text-align: justify;
+        column-count: 4;
+        /* column-width: 200px; */
+        column-gap: 30px;
+        column-rule-style: dashed;
+        column-rule-width: 4px;
+        column-rule-color: #3e6cff;
+      }
+      h1{
+        column-span: all;
+        /* 제한받지않고 자신의 위치를 명확하게 가진다 */
+      }
+    </style>
+  </head>
+  <body>
+  <div class="column">
+The basic idea of multicol, is that you can take a chunk of content and flow it into multiple columns, as in a newspaper. You do this by using one of two properties. The column-count property specifies the number of columns that you would like the content to break into. The column-width property specifies the ideal width, leaving the browser to figure out how many columns will fit.
+It doesn’t matter which elements are inside the content that you turn into a multicol container, everything remains in normal flow, but broken into columns. This makes multicol unlike other layout methods that we have in browsers today. Flexbox and Grid for example, take the child elements of the container and those items then participate in a flex or grid layout. With multicol, you still have normal flow, except inside a column.
+In the below example I am using column-width, to display columns of at least 14em. Multicol assigns as many 14em columns as will fit and then shares out the remaining space between the columns. Columns will be at least 14em, unless we can only display one column in which case it may be smaller. Multicol was the first time that we saw this kind of behavior in CSS, columns being created which were essentialy responsive by default.
+You do not need to add Media Queries and change the number of columns for various breakpoints, instead we specify an optimal width and the browser will work it out.The basic idea of multicol, is that you can take a chunk of content and flow it into multiple columns, as in a newspaper. You do this by using one of two properties. The column-count property specifies the number of columns that you would like the content to break into. The column-width property specifies the ideal width, leaving the browser to figure out how many columns will fit.
+<h1>Multi Column</h1>
+It doesn’t matter which elements are inside the content that you turn into a multicol container, everything remains in normal flow, but broken into columns. This makes multicol unlike other layout methods that we have in browsers today. Flexbox and Grid for example, take the child elements of the container and those items then participate in a flex or grid layout. With multicol, you still have normal flow, except inside a column.
+In the below example I am using column-width, to display columns of at least 14em. Multicol assigns as many 14em columns as will fit and then shares out the remaining space between the columns. Columns will be at least 14em, unless we can only display one column in which case it may be smaller. Multicol was the first time that we saw this kind of behavior in CSS, columns being created which were essentialy responsive by default. You do not need to add Media Queries and change the number of columns for various breakpoints, instead we specify an optimal width and the browser will work it out.The basic idea of multicol, is that you can take a chunk of content and flow it into multiple columns, as in a newspaper. You do this by using one of two properties. The column-count property specifies the number of columns that you would like the content to break into. The column-width property specifies the ideal width, leaving the browser to figure out how many columns will fit.
+It doesn’t matter which elements are inside the content that you turn into a multicol container, everything remains in normal flow, but broken into columns. This makes multicol unlike other layout methods that we have in browsers today. Flexbox and Grid for example, take the child elements of the container and those items then participate in a flex or grid layout. With multicol, you still have normal flow, except inside a column.
+In the below example I am using column-width, to display columns of at least 14em. Multicol assigns as many 14em columns as will fit and then shares out the remaining space between the columns. Columns will be at least 14em, unless we can only display one column in which case it may be smaller. Multicol was the first time that we saw this kind of behavior in CSS, columns being created which were essentialy responsive by default. You do not need to add Media Queries and change the number of columns for various breakpoints, instead we specify an optimal width and the browser will work it out.The basic idea of multicol, is that you can take a chunk of content and flow it into multiple columns, as in a newspaper. You do this by using one of two properties. The column-count property specifies the number of columns that you would like the content to break into. The column-width property specifies the ideal width, leaving the browser to figure out how many columns will fit.
+It doesn’t matter which elements are inside the content that you turn into a multicol container, everything remains in normal flow, but broken into columns. This makes multicol unlike other layout methods that we have in browsers today. Flexbox and Grid for example, take the child elements of the container and those items then participate in a flex or grid layout. With multicol, you still have normal flow, except inside a column.
+In the below example I am using column-width, to display columns of at least 14em. Multicol assigns as many 14em columns as will fit and then shares out the remaining space between the columns. Columns will be at least 14em, unless we can only display one column in which case it may be smaller. Multicol was the first time that we saw this kind of behavior in CSS, columns being created which were essentialy responsive by default. You do not need to add Media Queries and change the number of columns for various breakpoints, instead we specify an optimal width and the browser will work it out.
+  </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>float-holy grail layout</title>
+    <style media="screen">
+      *{
+        box-sizing: border-box;
+      }
+      #container{
+        width: 540px;
+        border: 2px solid skyblue;
+        margin:auto;
+      }
+      header{
+        border-bottom: 2px solid hotpink;
+      }
+      h1{
+        padding-left: 30px;
+      }
+      nav{
+        float: left;
+        width: 150px;
+        border-right: 1px solid hotpink;
+      }
+      article{
+        float: left;
+        width: 300px;
+        border-left: 1px solid hotpink;
+        border-right: 1px solid hotpink;
+        margin-left: -1px;
+      }
+      aside{
+        float: left;
+        width: 150px;
+        border-left: 1px solid hotpink;
+        margin-left: -1px;
+      }
+      footer{
+        clear: both;
+        border-top: 1px solid hotpink;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+    <header>
+      <h1>CSS</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li>position</li>
+        <li>float</li>
+        <li>flex</li>
+      </ul>
+    </nav>
+
+    <article>
+      <h2>float</h2>
+  The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+  The float property can have one of the following values:
+  left - The element floats to the left of its container
+  right - The element floats to the right of its container
+  none - The element does not float (will be displayed just where it occurs in the text). This is default
+  inherit - The element inherits the float value of its parent
+  In its simplest use, the float property can be used to wrap text around images.
+    </article>
+
+     <aside>
+       ad
+     </aside>
+
+    <footer>copyleft</footer>
+    </div>
+  </body>
+</html>
